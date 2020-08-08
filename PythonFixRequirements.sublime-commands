@@ -1,0 +1,6 @@
+[
+    { 
+        "caption": "Python Fix Requirements",
+        "command": "python_fix_requirements"
+    }
+]
