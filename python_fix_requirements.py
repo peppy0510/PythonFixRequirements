@@ -27,7 +27,8 @@ def python_fix_requirements(lines):
         elif line.startswith('# '):
             suffixes += [line]
         else:
-            requirements += [line]
+            for v in line.split(' '):
+                requirements += [v.strip()]
 
     prefixes = [v for v in prefixes if v]
     suffixes = [v for v in suffixes if v]
